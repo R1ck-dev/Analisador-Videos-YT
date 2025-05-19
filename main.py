@@ -39,7 +39,7 @@ with sr.AudioFile("temporario.wav") as source:
     print("Transcrição")
     print(texto)
 
-genai.configure(api_key='AIzaSyAQbeWmC6Z9dEg6oJQA1Ovf9MitaNB7NRw')
+genai.configure(api_key='')
 modelo = genai.GenerativeModel("gemini-2.0-flash-lite")
 resposta = modelo.generate_content(
     f"O seguinte texto é uma transcrição sobre um vídeo do Youtube, retorne um resumo sobre esse vídeo:\n\n{texto}"
